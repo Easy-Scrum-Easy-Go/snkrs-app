@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
-import DescriptionCard from '../componets/DescriptionCard';
+import DescriptionCard from '../components/DescriptionCard';
 
 function Shoe() {
   const { id } = useParams();
