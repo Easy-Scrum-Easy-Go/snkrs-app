@@ -1,10 +1,16 @@
-import { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import Shoe from './pages/Shoe';
 
 function App() {
   return (
-    <div className='App'>
-      <h1>Inventory App</h1>
-    </div>
+    <Router>
+      <main>
+        <Routes>
+          <Route path='/sneakers/:id' element={<Shoe />} />
+        </Routes>
+      </main>
+    </Router>
   );
 }
 
