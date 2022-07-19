@@ -10,9 +10,27 @@ const {validationResult} = require('express-validator');
  */
 exports.getAllShoes = async (req, res) => {
     try {
+        // GET ALL SHOES
+        const shoes = await Shoe.findAll();
 
+        if(!shoes) {
+            res.status(400).json({
+                success: false,
+                message: 'No shoes found!',
+            });
+        } else {
+            res.status(200).json({
+                shoes,
+                success: true,
+                message: 'All shoes returned'
+            })
+        }
     } catch (error) {
-
+        debug(error);
+        res.status(400).json({
+            success: false,
+            message: `ERROR: ${error.message}`
+        });
     }
 }
 
