@@ -1,10 +1,15 @@
-import { useState, useEffect } from 'react';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import Admin from './pages/Admin';
 
 function App() {
   return (
-    <div className='App'>
-      <h1>Inventory App</h1>
-    </div>
+    <Router className='App'>
+      <main>
+        <Routes>
+          <Route path='/sneakers/admin' element={<Admin />}/>
+        </Routes>
+      </main>
+    </Router>
   );
 }
 
