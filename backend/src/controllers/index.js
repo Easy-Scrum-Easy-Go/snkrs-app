@@ -2,6 +2,7 @@ const sequelize = require('../db');
 const Shoe = require('../models/Shoe');
 const debug = require('debug')('app:controllers');
 const {validationResult} = require('express-validator');
+const { response } = require('express');
 
 /**
  * @desc Gets all sneakers
@@ -101,24 +102,69 @@ exports.deleteShoeById = async (req, res) => {
  * @access Private
  */
 exports.createShoe = async (req, res) => {
-    try {
+    const errors = validationResult(req);
 
-    } catch (error) {
-
-    }
-}
-
-
+    // CHECK FOR EMPY ERROR ARRAY
+    if(!errors.isEmpty()) {
+        res.status(400).json({
+            success: false,
+            error: errors.array()
+        })
+    } else {
+        try {
+            // GRAB BODY OF REQ
+            const newShoe = req.body;
+            // USE CREATE FUNCTION IN SEQUELIZE TO CREATE SHOE
+            const createdShoe = await Shoe.create(newShoe);
+            res.status(200).json({
+                createdShoe,
+                success: true,
+                message: `Shoe created succesfully!`
+            });
+        } catch (error) {
+            debug(error);
+            res.status(400).json({
+                success: false,
+                message: `Shoe not created - ERROR: ${error.message}`
+            });
+        }
+    }  
+};
 
 /**
- * @desc Update a shoe
+ * @desc Update a single shoe
  * @route PUT /api/sneakers/:id
  * @access Private
  */
 exports.updateShoe = async (req, res) => {
-    try {
+    const errors = validationResult(req);
 
-    } catch (error) {
+    if(!errors.isEmpty()) {
+        res.status(400).json({
+            success: false,
+            error: errors.array()
+        });
+    } else {
+        const shoeId = req.params.id;
+        const updates = req.body;
 
+        try {
+            // FIND SHOE BY ID
+            const shoeToUpdate = await Shoe.findByPk(shoeId);
+            // UPDATE SHOE WITH THE UPDATESS ENTERED BY USER
+            const updatedShoe = await shoeToUpdate.update(updates);
+
+            res.status(200).json({
+                updatedShoe,
+                success: true,
+                message: `Shoe updated succesfully!`
+            });
+        } catch (error) {
+            debug(error);
+            res.status(400).json({
+                success: false,
+                message: `Unable to update shoe - ERROR: ${error.message}`
+            });
+        }    
     }
-}
+};
