@@ -30,7 +30,7 @@ if ((process.env.MODE = 'development')) {
   app.use(morgan('dev'));
 }
 
-dotenv.config({path: path.joing(__dirname, '..', '.env')});
+dotenv.config({path: path.join(__dirname, '..', '.env')});
 
 // USE PUBLIC HTML SHEET
 app.use(express.static(path.join(__dirname, 'src', 'public')));

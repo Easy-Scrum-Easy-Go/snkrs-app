@@ -32,8 +32,7 @@ exports.getAllShoes = async (req, res) => {
             message: `ERROR: ${error.message}`
         });
     }
-}
-
+};
 
 /**
  * @desc Get one shoe by id
@@ -41,13 +40,32 @@ exports.getAllShoes = async (req, res) => {
  * @access Public
  */
 exports.getShoeById = async (req, res) => {
+    const shoeId = req.params.id;
+
     try {
+        const shoe = await Shoe.findByPk(shoeId);
 
+        // CHECK IF SHOE ID IS VALID OR NOT
+        if(!shoe) {
+            res.status(400).json({
+                success: false,
+                message: `Shoe not found - Check shoe id!`
+            })
+        } else {
+            res.status(200).json({
+                shoe,
+                success: true,
+                message: `Shoe found succesfully!`
+            })
+        }
     } catch (error) {
-
+        debug(error);
+        res.status(400).json({
+            success: false,
+            message: `Shoe not found - ERROR: ${error.message}`
+        })
     }
-}
-
+};
 
 /**
  * @desc Delete a shoe
