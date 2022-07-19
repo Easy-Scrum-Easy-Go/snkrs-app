@@ -73,12 +73,26 @@ exports.getShoeById = async (req, res) => {
  * @access Private
  */
 exports.deleteShoeById = async (req, res) => {
+    const shoeId = req.params.id;
+
     try {
+        const shoeToDelete = await Shoe.findByPk(shoeId);
+        const deletedShoe = await shoeToDelete.destroy();
 
+        // DELETE SHOE
+        res.status(200).json({
+            deletedShoe,
+            success: true,
+            message: `Shoe deleted succesfully!`
+        });
     } catch (error) {
-
+        debug('ERROR: ', error);
+        res.status(400).json({
+            success: false,
+            message: `Unable to delete shoe - ERROR: ${error.message}`
+        });
     }
-}
+};
 
 
 /**
