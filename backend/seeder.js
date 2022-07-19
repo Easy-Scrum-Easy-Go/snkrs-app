@@ -7,7 +7,7 @@ const { sneakers } = require('./src/data/sneakers')
 const sequelize = require('./src/db');
 
 //import the model that we are trying to import our data into [x]
-const Shoe = require('./src/models/Shoe'); //Check the file path of this model
+const Shoe = require('./src/models/Shoe');
 
 // modules for debugging
 const debug = require('debug')('app:seeder');
@@ -19,8 +19,10 @@ const populateDb = async () => {
   try {
 	  // reset the DB
     await sequelize.sync({force: true});
+
     //POPULATE DB
     await Shoe.bulkCreate(sneakers);
+    
     debug(colors.green.inverse("SUCCESS: Database has been re-populated!"));
     process.exit(1)
   } catch (error) {

@@ -1,4 +1,5 @@
 const express = require('express');
+const debug = require('debug')('app:server');
 const colors = require('colors');
 const morgan = require('morgan');
 const dotenv = require('dotenv');
