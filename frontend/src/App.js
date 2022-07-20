@@ -1,9 +1,15 @@
-import { useState, useEffect } from 'react';
+import UpdateShoe from './pages/UpdateShoe';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div className='App'>
-      <h1>Inventory App</h1>
+      <Router>
+      <Routes>
+        <Route path="/sneakers/:id" element={<UpdateShoe />} />
+      </Routes>
+      </Router>
+      
     </div>
   );
 }

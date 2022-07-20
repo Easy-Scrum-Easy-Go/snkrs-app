@@ -26,7 +26,7 @@ const populateDb = async () => {
     debug(colors.green.inverse("SUCCESS: Database has been re-populated!"));
     process.exit(1)
   } catch (error) {
-    debug(color.red(`Error with seeding database: ${error.message}`));
+    debug(colors.red(`Error with seeding database: ${error.message}`));
     process.exit(1);
   }
 };
