@@ -7,7 +7,7 @@ module.exports = {
             "release_date": "2018-04-14T23:59:59.000Z",
             "retail_price": 160.00,
             "silhouette": "Air Jordan 1",
-            "story_html": "This Nike Air Jordan 1 Retro High OG &#39;Shadow&#39; 2018 is a retro re-release of an original 1985 colorway. The shoe features a black and medium grey leather upper with a white midsole and black outsole. It also features OG Nike Air branding on the tongue and the Wings logo on the ankle collar. It was last retroed in 2013, and a low-top version dropped in 2015."
+            "story_html": "This Nike Air Jordan 1 Retro High OG Shadow 2018 is a retro re-release of an original 1985 colorway. The shoe features a black and medium grey leather upper with a white midsole and black outsole. It also features OG Nike Air branding on the tongue and the Wings logo on the ankle collar. It was last retroed in 2013, and a low-top version dropped in 2015."
         },
         {
             "brand_name": "Air Jordan",
@@ -88,7 +88,7 @@ module.exports = {
             "release_date": "2019-05-17T07:00:00.000Z",
             "retail_price": 190.00,
             "silhouette": "Air Jordan 12",
-            "story_html": "The Wmns Air Jordan 12 Retro &#39;Reptile&#39; sneaker draws details from the 1996 classic and elevates them with luxe style additions. This April 2019-released, women&#39;s-exclusive shoe features the AJ12’s original stitching, inspired by the Rising Sun Flag of Japan. Its black leather upper is laden with exotic reptile-inspired texture and embellished with gold accents. This edition is completed with classic Zoom cushioning and sections of herringbone tread."
+            "story_html": "The Wmns Air Jordan 12 Retro Reptile sneaker draws details from the 1996 classic and elevates them with luxe style additions. This April 2019-released, womens-exclusive shoe features the AJ12’s original stitching, inspired by the Rising Sun Flag of Japan. Its black leather upper is laden with exotic reptile-inspired texture and embellished with gold accents. This edition is completed with classic Zoom cushioning and sections of herringbone tread."
         },
         {
             "brand_name": "Air Jordan",
@@ -124,7 +124,7 @@ module.exports = {
             "release_date": "2018-06-09T23:59:59.000Z",
             "retail_price": 225.00,
             "silhouette": "Air Jordan 4",
-            "story_html": "Music artist Travis Scott hails from Houston, where the Oilers used to take the field in red, white and blue uniforms. The Travis Scott x Air Jordan 4 Retro &#39;Cactus Jack&#39; colorway pays tribute to the city’s bygone football team with a Durabuck leather upper dressed in University Blue and a Varsity Red insole. The black lace cage and a heel panel feature a light blue speckle pattern. Cactus Jack branding appears on the left heel in Varsity Red, with a matching Jumpman logo on the right."
+            "story_html": "Music artist Travis Scott hails from Houston, where the Oilers used to take the field in red, white and blue uniforms. The Travis Scott x Air Jordan 4 Retro Cactus Jack colorway pays tribute to the city’s bygone football team with a Durabuck leather upper dressed in University Blue and a Varsity Red insole. The black lace cage and a heel panel feature a light blue speckle pattern. Cactus Jack branding appears on the left heel in Varsity Red, with a matching Jumpman logo on the right."
         },
         {
             "brand_name": "Air Jordan",
@@ -133,7 +133,7 @@ module.exports = {
             "release_date": "2018-11-17T23:59:59.000Z",
             "retail_price": 160.00,
             "silhouette": "Air Jordan 1",
-            "story_html": "In 1985, Michael Jordan received the NBA’s Rookie of the Year Award after launching his career with a remarkable point per game average and a thirst for success. To celebrate, Jordan Brand released the Air Jordan 1 Retro High OG &#39;Rookie of the Year.&#39; The high top features a white-based leather upper with perforations on the toe box for breathability and Gold Harvest leather overlays on the mudguard, ankle, eyestay, and heel. Hidden on the inside of each strap on the upper are callouts to MJ’s outstanding rookie season. ‘1984-85 R.O.Y. 2313 POINTS 28.2 PPG’ can be found on the inside of one strap, and a quote from Jordan can be found on the other."
+            "story_html": "In 1985, Michael Jordan received the NBA’s Rookie of the Year Award after launching his career with a remarkable point per game average and a thirst for success. To celebrate, Jordan Brand released the Air Jordan 1 Retro High OG Rookie of the Year. The high top features a white-based leather upper with perforations on the toe box for breathability and Gold Harvest leather overlays on the mudguard, ankle, eyestay, and heel. Hidden on the inside of each strap on the upper are callouts to MJ’s outstanding rookie season. ‘1984-85 R.O.Y. 2313 POINTS 28.2 PPG’ can be found on the inside of one strap, and a quote from Jordan can be found on the other."
         },
         {
             "brand_name": "Air Jordan",
@@ -151,7 +151,7 @@ module.exports = {
             "release_date": "2019-05-18T07:00:00.000Z",
             "retail_price": 200.00,
             "silhouette": "Air Jordan 7",
-            "story_html": "Amsterdam-based boutique and streetwear brand, Patta joins forces with Jordan Brand to lend their signature aesthetic to the Patta x Air Jordan 7 Retro OG SP &#39;Shimmer&#39; sneaker. Part of a limited-edition capsule collection released in May 2019, this rendition sports an earth-toned color palette of Shimmer, Mahogany Mink, Velvet Brown and Tough Red hues on a premium leather and suede upper. Unique perforation patterns and an offset Jumpman logo accent the underlay, while signature Patta script dresses the triple-tone midsole. A durable rubber outsole equipped with Air technology reinforces the design, which is inspired by Michael Jordan&#39;s run with the Dream Team at the 1992 Summer Games in Barcelona."
+            "story_html": "Amsterdam-based boutique and streetwear brand, Patta joins forces with Jordan Brand to lend their signature aesthetic to the Patta x Air Jordan 7 Retro OG SP Shimmer sneaker. Part of a limited-edition capsule collection released in May 2019, this rendition sports an earth-toned color palette of Shimmer, Mahogany Mink, Velvet Brown and Tough Red hues on a premium leather and suede upper. Unique perforation patterns and an offset Jumpman logo accent the underlay, while signature Patta script dresses the triple-tone midsole. A durable rubber outsole equipped with Air technology reinforces the design, which is inspired by Michael Jordans run with the Dream Team at the 1992 Summer Games in Barcelona."
         },
         {
             "brand_name": "Air Jordan",
@@ -180,7 +180,7 @@ module.exports = {
             "release_date": "2019-05-07T07:00:00.000Z",
             "retail_price": 185.00,
             "silhouette": "Air Jordan 11",
-            "story_html": "An original colorway of the Air Jordan 11 Low back in 2001, this low-cut style is revived with the ladies’-exclusive Wmns Air Jordan 11 Retro Low &#39;Pink Snakeskin&#39; sneaker. Released in May 2019, its smooth white leather upper is decorated with glossy snakeskin mudguards. Below, the shoe rides along a foam midsole and translucent outsole."
+            "story_html": "An original colorway of the Air Jordan 11 Low back in 2001, this low-cut style is revived with the ladies’-exclusive Wmns Air Jordan 11 Retro Low Pink Snakeskin sneaker. Released in May 2019, its smooth white leather upper is decorated with glossy snakeskin mudguards. Below, the shoe rides along a foam midsole and translucent outsole."
         },
         {
             "brand_name": "Air Jordan",
@@ -225,7 +225,7 @@ module.exports = {
             "release_date": "2019-05-18T07:00:00.000Z",
             "retail_price": 185.00,
             "silhouette": "Air Jordan 11",
-            "story_html": "The Air Jordan 11 Retro Low&#39;s iconic identity was founded when Michael Jordan returned to the game in 1995. Surfacing in June 2019, this &#39;Light Bone Snakeskin&#39; variant reaffirms the classic&#39;s allure with a contemporary snakeskin print on the leather upper&#39;s mudguard. Rope laces winding through the lateral webbing customize fit. Signature Jumpman insignias are positioned on the tongue and heel. A translucent rubber outsole and carbon fiber plate form the base."
+            "story_html": "The Air Jordan 11 Retro Lows iconic identity was founded when Michael Jordan returned to the game in 1995. Surfacing in June 2019, this Light Bone Snakeskin variant reaffirms the classics allure with a contemporary snakeskin print on the leather uppers mudguard. Rope laces winding through the lateral webbing customize fit. Signature Jumpman insignias are positioned on the tongue and heel. A translucent rubber outsole and carbon fiber plate form the base."
         },
         {
             "brand_name": "Air Jordan",
@@ -234,7 +234,7 @@ module.exports = {
             "release_date": "2019-05-25T07:00:00.000Z",
             "retail_price": 175.00,
             "silhouette": "Air Jordan 1",
-            "story_html": "The Air Jordan SB 1 Retro High is representative of the decades-old influence that the iconic shoe has had on skate culture. Revealed in May 2019, this &#39;Light Bone&#39; update is formed by a classic leather upper treated with a wear-away finish concealing an alternate tint. Custom branding resurfaces via the lateral Swooshes, Jumpman tongue label and Wings logo. The encapsulated Air unit and concentric circle outsole are mainstays on this classic silhouette."
+            "story_html": "The Air Jordan SB 1 Retro High is representative of the decades-old influence that the iconic shoe has had on skate culture. Revealed in May 2019, this Light Bone update is formed by a classic leather upper treated with a wear-away finish concealing an alternate tint. Custom branding resurfaces via the lateral Swooshes, Jumpman tongue label and Wings logo. The encapsulated Air unit and concentric circle outsole are mainstays on this classic silhouette."
         },
         {
             "brand_name": "Air Jordan",
@@ -288,7 +288,7 @@ module.exports = {
             "release_date": "2016-02-13T08:00:00.000Z",
             "retail_price": 220.00,
             "silhouette": "Air Jordan 4",
-            "story_html": "The Air Jordan 4 Retro OG &#39;Cement’ 2016 was one of the original four colorways released in 1989. The sneaker features the original White, Fire Red, Black, and Tech Grey colorway, with the speckled Cement Grey accents that give the sneaker its nickname. Released during the 2016 NBA All-Star weekend in Toronto, the sneaker was also retro’d in 1999 and 2012. The 1999 and 2016 retros are the only models that feature the ‘Nike Air’ branding on the heel, just like the 1989 OG sneakers."
+            "story_html": "The Air Jordan 4 Retro OG Cement’ 2016 was one of the original four colorways released in 1989. The sneaker features the original White, Fire Red, Black, and Tech Grey colorway, with the speckled Cement Grey accents that give the sneaker its nickname. Released during the 2016 NBA All-Star weekend in Toronto, the sneaker was also retro’d in 1999 and 2012. The 1999 and 2016 retros are the only models that feature the ‘Nike Air’ branding on the heel, just like the 1989 OG sneakers."
         },
         {
             "brand_name": "Champion",
@@ -325,7 +325,7 @@ module.exports = {
             "release_date": 2021,
             "retail_price": 210.00,
             "silhouette": "Gucci Slide",
-            "story_html": "The Gucci Pursuit ‘72 Rubber Slide in ‘Black’ sneaker pays homage to the fashion house&#39;s roots with the iconic Web stripe—first developed by Gucci in the 1950s—taking the stage. The minimal, open-toe silhouette features a thick black rubber sole with a rounded shape. The top portion of the slide is a rubber strap displaying the Gucci Web green and red striped motif, and the design is finished with a Gucci logo embossed on the outer midsole."
+            "story_html": "The Gucci Pursuit ‘72 Rubber Slide in ‘Black’ sneaker pays homage to the fashion houses roots with the iconic Web stripe—first developed by Gucci in the 1950s—taking the stage. The minimal, open-toe silhouette features a thick black rubber sole with a rounded shape. The top portion of the slide is a rubber strap displaying the Gucci Web green and red striped motif, and the design is finished with a Gucci logo embossed on the outer midsole."
         }
     ]
 };
