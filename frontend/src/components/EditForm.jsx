@@ -29,7 +29,7 @@ function EditForm({shoeId}) {
     }
     useEffect(() => {
         getShoe(shoeId)
-}, [])
+}, [shoeId])
 
 
 const updateShoe = async (shoeId, updatedShoe) => {
