@@ -1,6 +1,5 @@
 import React from 'react'
 import {useState, useEffect} from "react" 
-import { useParams } from 'react-router-dom'
 import UpdateCard from './UpdateCard'
 
 function EditForm({shoeId}) {
@@ -35,7 +34,7 @@ function EditForm({shoeId}) {
 
 const updateShoe = async (shoeId, updatedShoe) => {
     try {
-        const response = await fetch(`http://localhost:8000/api/sneakers/${shoeId}`, {
+        const response = await fetch(`http://localhost:8000/api/sneakers-edit/${shoeId}`, { 
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',

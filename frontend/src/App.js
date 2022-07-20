@@ -8,7 +8,7 @@ function App() {
     <Router className='App'>
       <main>
         <Routes>
-        <Route path="/sneakers/:id" element={<UpdateShoe />} />
+        <Route path="/sneakers-edit/:id" element={<UpdateShoe />} />
           <Route path='/sneakers/:id' element={<Shoe />} />
           <Route path='/sneakers/admin' element={<Admin />} />
         </Routes>
