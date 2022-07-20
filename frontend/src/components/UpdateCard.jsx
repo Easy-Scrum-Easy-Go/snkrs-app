@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 function UpdateCard({shoeData}) {
   return (
@@ -8,7 +8,7 @@ function UpdateCard({shoeData}) {
         <h2>${shoeData.retail_price}</h2>
         <h4>{shoeData.story_html}</h4>
     </div>
-  )
+  );
 }
 
-export default UpdateCard
+export default UpdateCard;

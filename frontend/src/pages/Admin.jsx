@@ -1,5 +1,6 @@
-import React, {useState} from 'react'
-import CreateShoe from '../components/CreateShoe'
+import React, {useState} from 'react';
+
+import CreateShoe from '../components/CreateShoe';
 
 function Admin() {
     const [shoes, setShoes] = useState([])
@@ -17,7 +18,7 @@ function Admin() {
         const data = await res.json();
 
         // SET DATA NOW
-        setShoes([...shoes, data])
+        setShoes([...shoes, data]);
     }
 
     return (
@@ -28,4 +29,4 @@ function Admin() {
   )
 }
 
-export default Admin
+export default Admin;

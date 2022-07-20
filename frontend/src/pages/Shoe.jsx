@@ -4,8 +4,8 @@ import { useParams } from 'react-router-dom';
 import DescriptionCard from '../components/DescriptionCard';
 
 function Shoe() {
-  const { id } = useParams();
   const [shoe, setShoe] = useState({});
+  const { id } = useParams();
 
   const getShoe = async (shoeId) => {
     const response = await fetch(`http://localhost:8000/api/sneakers/${shoeId}`);
