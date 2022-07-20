@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ShoesCard({shoesData}) {
+function DisplayCard({shoesData}) {
   return (
     <div>
       <h1>{shoesData.name}</h1>
@@ -10,4 +10,4 @@ function ShoesCard({shoesData}) {
   );
 }
 
-export default ShoesCard;
+export default DisplayCard;
