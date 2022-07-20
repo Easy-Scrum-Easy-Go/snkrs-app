@@ -1,14 +1,13 @@
-import React from 'react'
+import React from 'react';
 
 function ShoesCard({shoesData}) {
   return (
     <div>
-        <h1> {shoesData.name} </h1>
-        <img src={shoesData.grid_picture_url} alt={shoesData.name} />
-        <h2> ${shoesData.retail_price} </h2>
-        
+      <h1>{shoesData.name}</h1>
+      <img src={shoesData.grid_picture_url} alt={shoesData.name} />
+      <h2>${shoesData.retail_price}</h2>
     </div>
-  )
+  );
 }
 
-export default ShoesCard
+export default ShoesCard;

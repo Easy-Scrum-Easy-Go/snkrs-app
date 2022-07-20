@@ -8,7 +8,7 @@ function DescriptionCard({item}) {
         <h4>{item.retail_price}</h4>
         <h4>{item.story_html}</h4>
     </div>
-  )
+  );
 }
 
 export default DescriptionCard;
