@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useParams } from 'react'
-import CSS from "../CSS/index.css"
+import React, { useState, useEffect } from 'react';
 
+import '../CSS/index.css';
 
 function SneakersSearch() {
 
@@ -17,8 +17,7 @@ function SneakersSearch() {
 
     useEffect(() => {
         getShoesData()
-    }, [])
-
+    }, []);
 
     return (
         <div>
@@ -30,7 +29,6 @@ function SneakersSearch() {
             // onChange={e => setQuery(e.target.value)}
             />
 
-
             <table className='search-table'>
                 <tbody>
                     <tr>
@@ -40,7 +38,7 @@ function SneakersSearch() {
                 </tbody>
             </table>
         </div>
-    )
+    );
 }
 
-export default SneakersSearch
+export default SneakersSearch;

@@ -10,8 +10,10 @@
 /* HOME PAGE -------------------------------------------------------------------------------------*/
 .parallax {
   /* The image used */
-  background-image: url("https://images.unsplash.com/photo-1618677831708-0e7fda3148b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c25lYWtlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60");
+  background-image: url("/img/sneakers.jpg");
   background-repeat: no-repeat;
+  background-position: center;
+
   /* Set a specific height */
   min-height: 400px;
 
@@ -198,5 +200,16 @@
 
 .search-title {
   text-align: center;
-  font-size: 3rem;
+  font-size: 50px;
+}
+
+
+.search-bar-container{
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar{
+  width: 700px;
+
 }

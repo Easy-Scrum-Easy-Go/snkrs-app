@@ -1,10 +1,10 @@
 import React from 'react';
-
 import { useParams } from "react-router-dom";
+
+import '../CSS/index.css';
 import EditForm from '../components/EditForm';
 
 function UpdateShoe() {
-
   const { id } = useParams();
 
   return (

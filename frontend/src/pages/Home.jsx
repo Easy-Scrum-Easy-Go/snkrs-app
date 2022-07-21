@@ -1,5 +1,6 @@
-import React from 'react'
-import "../CSS/index.css"
+import React from 'react';
+
+import '../CSS/index.css';
 
 function Home() {
     return (
@@ -14,7 +15,7 @@ function Home() {
             <div className='parallax'></div>
             <div className='parallax'></div>
         </div>
-    )
+    );
 }
 
-export default Home
+export default Home;

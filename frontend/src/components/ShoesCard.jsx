@@ -1,5 +1,5 @@
 import React from 'react'
-import "../CSS/index.css"
+
 import LinkButtonDesc from './LinkButtonDesc'
 
 function ShoesCard({shoesData}) {
