@@ -1,6 +1,5 @@
 import React from 'react';
-
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 function DescriptionCard({ item }) {
 
@@ -22,19 +21,29 @@ function DescriptionCard({ item }) {
         console.log('Shoe deleted!', data);
         navigate('/');
 
+
       } catch (error) {
         console.log(error.message);
+
       }
+
     }
   }
 
   return (
-    <div>
-      <h2>{item.name}</h2>
-      <img src={item.grid_picture_url} alt={item.name} />
-      <h4>{item.retail_price}</h4>
-      <h4>{item.story_html}</h4>
-      <button onClick={() => deleteItem(item.id)}>Delete</button>
+    <div className='desc-holder'>
+      <div className='shoe-desc-card'>
+        <h2 className='shoe-desc-name'>{item.name}</h2>
+        <img src={item.grid_picture_url} alt={item.name} />
+        <h4>${item.retail_price}</h4>
+        <h4 className='shoe-desc-desc'>{item.story_html}</h4>
+
+        <div className='dlt-update-container'>
+        <button className="shoe-desc-del-btn" onClick={() => deleteItem(item.id)}>Delete</button>
+        <Link className="shoe-desc-update" to={`/sneakers-edit/${item.id}`}>Update Sneaker</Link>
+        </div>
+       
+      </div>
     </div>
   );
 }

@@ -9,8 +9,8 @@ function UpdateShoe() {
 
   return (
     <div>
-      <h1>Update Shoe</h1>
-      <EditForm shoeId={id} />
+        <h1 className='update-shoe-title'>Update Shoe</h1>
+        <EditForm shoeId={id}/>
     </div>
   );
 }

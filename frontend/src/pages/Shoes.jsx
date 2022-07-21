@@ -1,4 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react'
+import {useEffect, useState} from 'react'
+import ShoesCard from '../components/ShoesCard'
+import CSS from "../CSS/index.css"
 
 import DisplayCard from '../components/DisplayCard';
 
@@ -19,10 +22,9 @@ function Shoes() {
   }, []);
 
   return (
-    <div>
-      <h1>SNKRS APP</h1>
-      <div>
-        {shoes.length > 0 ? shoes.map((shoe) => <DisplayCard key={shoe.id} shoesData={shoe} />) : 'Loading..'}
+    <div className='shoes-body'>
+      <div className='shoes-container'>
+        {shoes.length > 0 ? shoes.map((shoe) => <ShoesCard key = {shoe.id} shoesData = {shoe} />) : 'loading...'}
       </div>
     </div>
   );

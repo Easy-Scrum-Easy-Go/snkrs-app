@@ -23,7 +23,7 @@ function Admin() {
 
     return (
       <div>
-          <h2>Create a shoe</h2>
+          <h2 className='create-shoe-title'>Create a shoe</h2>
           <CreateShoe postShoe={postShoe} />
       </div>
   )
