@@ -195,3 +195,13 @@
   text-align: center;
   font-size: 50px;
 }
+
+
+.search-bar-container{
+  display: flex;
+  justify-content: center;
+}
+.search-bar{
+  width: 700px;
+
+}
