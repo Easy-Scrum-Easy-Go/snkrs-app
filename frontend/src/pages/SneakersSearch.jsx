@@ -37,8 +37,7 @@ function SneakersSearch() {
                     <tr>
                         <th className='search-title'>Sneaker</th>
                     </tr>
-                    {shoes.filter(shoe => shoe.name.toLowerCase().includes(query)).map((shoe) => <tr className='search-name-img-container'>{shoe.name} <img src={shoe.grid_picture_url} alt="test"></img><Link to={`/sneakers/${shoe.id}`}>Go To Shoe</Link></tr>)}
-                    
+                    {shoes.filter(shoe => shoe.name.toLowerCase().includes(query.toLowerCase())).map((shoe) => <tr className='search-name-img-container'>{shoe.name} <img src={shoe.grid_picture_url} alt="test"></img><Link to={`/sneakers/${shoe.id}`}>Go To Shoe</Link></tr>)}
                 </tbody>
             </table>
         </div>
