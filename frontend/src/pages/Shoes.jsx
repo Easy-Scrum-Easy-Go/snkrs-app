@@ -1,6 +1,7 @@
 import React from 'react'
 import {useEffect, useState} from 'react'
 import ShoesCard from '../components/ShoesCard'
+import CSS from "../CSS/index.css"
 
 function Shoes() {
 
@@ -21,9 +22,8 @@ useEffect(() => {
 }, [])
 
   return (
-    <div>
-      <h1>All Shoes</h1>
-      <div>
+    <div className='shoes-body'>
+      <div className='shoes-container'>
         {shoes.length > 0 ? shoes.map((shoe) => <ShoesCard key = {shoe.id} shoesData = {shoe} />) : 'loading...'}
       </div>
     </div>
