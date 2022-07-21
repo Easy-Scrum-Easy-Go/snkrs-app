@@ -1,6 +1,6 @@
-import React from 'react'
-import "../CSS/index.css"
-import { Link } from 'react-router-dom'
+import React from 'react';
+
+import { Link } from 'react-router-dom';
 
 function Header() {
 
@@ -22,7 +22,6 @@ function Header() {
                             </li>
                         </ul>
 
-
                         <form class="d-flex" role="search">
 
                             <Link to={`/sneakers/search`} className='link-btn-desc' >
@@ -30,12 +29,11 @@ function Header() {
                             </Link>
                         </form>
 
-
                     </div>
                 </div>
             </nav>
         </div>
-    )
+    );
 }
 
-export default Header
+export default Header;

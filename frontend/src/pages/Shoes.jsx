@@ -1,9 +1,7 @@
-import React from 'react'
-import {useEffect, useState} from 'react'
-import ShoesCard from '../components/ShoesCard'
-import CSS from "../CSS/index.css"
+import React, { useEffect, useState } from 'react';
 
-import DisplayCard from '../components/DisplayCard';
+import '../CSS/index.css';
+import ShoesCard from '../components/ShoesCard';
 
 function Shoes() {
   const [shoes, setShoes] = useState([]);
@@ -24,7 +22,7 @@ function Shoes() {
   return (
     <div className='shoes-body'>
       <div className='shoes-container'>
-        {shoes.length > 0 ? shoes.map((shoe) => <ShoesCard key = {shoe.id} shoesData = {shoe} />) : 'loading...'}
+        {shoes.length > 0 ? shoes.map((shoe) => <ShoesCard key={shoe.id} shoesData={shoe} />) : 'loading...'}
       </div>
     </div>
   );
