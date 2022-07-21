@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from "react-router-dom"
-
+import {Link} from "react-router-dom"
 import '../CSS/index.css';
 
 function SneakersSearch() {
 
     const [shoes, setShoes] = useState([])
+    const [query , setQuery] = useState("")
 
+    
     const getShoesData = async () => {
         const response = await fetch(`http://localhost:8000/api/sneakers`)
         const data = await response.json()
@@ -27,7 +28,7 @@ function SneakersSearch() {
                 type="search"
                 placeholder="Search for Sneakers..."
                 aria-label="Search"
-            // onChange={e => setQuery(e.target.value)}
+                onChange={e => setQuery(e.target.value)}
             />
 
             <table className='search-table'>
