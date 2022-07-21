@@ -1,20 +1,21 @@
-
 /* HEADER -------------------------------------------------------------------------------------*/
 
-.bg-color-custom{
+.bg-color-custom {
   background-color: #F2F3AE;
   border: 2px solid #69140E;
-  height: 75px;
-  font-size: 25px;
+  height: 10vh;
+  font-size: 1.5rem;
 }
 
 /* HOME PAGE -------------------------------------------------------------------------------------*/
 .parallax {
   /* The image used */
-  background-image: url("https://images.unsplash.com/photo-1618677831708-0e7fda3148b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c25lYWtlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60");
+  background-image: url("/img/sneakers.jpg");
   background-repeat: no-repeat;
+  background-position: center;
+
   /* Set a specific height */
-  min-height: 400px; 
+  min-height: 400px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -23,16 +24,16 @@
   background-size: cover;
 }
 
-.home-page-desc1{
+.home-page-desc1 {
   font-size: 80px;
   color: burlywood;
   text-shadow: -1px 0 black, 0 5px black, 7px 0 black, 0 -1px black;
   height: 0px;
   text-align: center;
-  
+
 }
 
-.home-page-desc2{
+.home-page-desc2 {
   height: 0px;
   font-size: 40px;
   color: #D58936;
@@ -41,19 +42,20 @@
 
 /* ALL SHOES "/sneakers"-------------------------------------------------------------------------------------*/
 
-.shoes-container{
+.shoes-container {
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
 }
-.shoes-card{
+
+.shoes-card {
   margin-bottom: 40px;
   margin-top: 20px;
   width: 400px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-  padding:0 30px;
+  padding: 0 30px;
   border-radius: 10px;
   background-color: white;
 }
@@ -64,21 +66,22 @@
   z-index: 3;
   border-color: #50B2C0 !important;
 }
-.shoe-name{
-  font-size: 25px;
+
+.shoe-name {
+  font-size: 1.5rem;
 }
 
-.shoes-body{
+.shoes-body {
   background-color: blanchedalmond;
 }
 
-.price-link-style{
+.price-link-style {
   display: flex;
   justify-content: space-between;
 }
 
 /* LINK BUTTON TO DESC -------------------------------------------------------------------------------------*/
-.link-btn-desc{
+.link-btn-desc {
   color: #69140E;
   height: 35px;
   text-decoration: none;
@@ -86,75 +89,79 @@
 
 /* DESCRIPTION CARD -------------------------------------------------------------------------------------*/
 
-.desc-holder{
+.desc-holder {
   display: flex;
   justify-content: center;
   background-color: blanchedalmond;
 }
 
-.shoe-desc-card{ 
+.shoe-desc-card {
   width: 500px;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-.shoe-desc-name{
+
+.shoe-desc-name {
   text-align: center;
   color: #69140E;
 }
 
-.shoe-desc-del-btn{
+.shoe-desc-del-btn {
   width: 200px;
   background-color: lightgray;
-  
+
 }
 
-.dlt-update-container{
+.dlt-update-container {
   margin-top: 12px;
   display: flex;
   justify-content: space-between;
 }
 
-.shoe-desc-update{
- width: 200px;
- background-color: lightgray;
- text-align: center;
- border: 2px solid black;
- text-decoration: none;
- color: black;
-} 
+.shoe-desc-update {
+  width: 200px;
+  background-color: lightgray;
+  text-align: center;
+  border: 2px solid black;
+  text-decoration: none;
+  color: black;
+}
 
-.shoe-desc-desc{
+.shoe-desc-desc {
   color: #A44200;
 }
 
 /* UPDATE CARD / EDIT FORM "/sneakers-edit/:id" -------------------------------------------------------------*/
-.update-shoe-title{
+.update-shoe-title {
   text-align: center;
 }
-.update-card-holder{
+
+.update-card-holder {
   display: flex;
   justify-content: center;
   margin-top: 50px;
 }
-.update-card{
-    width: 500px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+
+.update-card {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.update-shoe-btn{
+.update-shoe-btn {
   border-radius: 10px;
   height: 50px;
 }
+
 /* =======EDIT FORM======== */
 
-.update-card-edit-form{
+.update-card-edit-form {
   display: flex;
 }
 
-.update-form-container{
+.update-form-container {
   display: flex;
   justify-content: center;
   margin-left: 100px;
@@ -162,12 +169,12 @@
   width: 800px;
 }
 
-.input-boxes{
+.input-boxes {
   margin-bottom: 30px;
   width: 300px;
 }
 
-.input-boxes-desc{
+.input-boxes-desc {
   margin-bottom: 30px;
   width: 300px;
   height: 300px;
@@ -175,23 +182,23 @@
 
 /* CREATE SHOE ------------------------------------------------------------------------------------------ */
 
-.create-shoe-form-container{
+.create-shoe-form-container {
   display: flex;
   justify-content: center;
 }
 
-.create-shoe-title{
+.create-shoe-title {
   text-align: center;
 }
 
 /* SEARCH SHOE ------------------------------------------------------------------------------------------ */
 
-.search-table{
+.search-table {
   display: flex;
   justify-content: center;
 }
 
-.search-title{
+.search-title {
   text-align: center;
   font-size: 50px;
 }
@@ -201,6 +208,7 @@
   display: flex;
   justify-content: center;
 }
+
 .search-bar{
   width: 700px;
 
