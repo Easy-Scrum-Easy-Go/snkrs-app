@@ -1,10 +1,12 @@
 /* HEADER -------------------------------------------------------------------------------------*/
 
-.bg-color-custom {
-  background-color: #F2F3AE;
-  border: 2px solid #69140E;
-  height: 10vh;
-  font-size: 1.5rem;
+.bg-color-custom{
+  color: #69140E;
+  
+
+  background-color: rgb(210, 133, 105) ;
+  height: 75px;
+  font-size: 25px;
 }
 
 /* HOME PAGE -------------------------------------------------------------------------------------*/
@@ -26,18 +28,24 @@
 
 .home-page-desc1 {
   font-size: 80px;
-  color: burlywood;
+  color: rgb(210, 133, 105) ;
   text-shadow: -1px 0 black, 0 5px black, 7px 0 black, 0 -1px black;
   height: 0px;
   text-align: center;
 
 }
 
-.home-page-desc2 {
-  height: 0px;
+.home-page-desc2{
+  /* background: rgba(210, 133, 105, 0.5); */
+  opacity: .5;
   font-size: 40px;
-  color: #D58936;
+  color: black;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.home-page-desc2::before {
+  background-color: rgba(0, 0, 0, .5);
+  z-index: -1;
 }
 
 /* ALL SHOES "/sneakers"-------------------------------------------------------------------------------------*/
@@ -212,4 +220,10 @@
 .search-bar{
   width: 700px;
 
+}
+
+.search-name-img-container{
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
 }
