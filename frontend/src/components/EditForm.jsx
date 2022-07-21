@@ -1,9 +1,9 @@
-import React from 'react'
-import {useState, useEffect} from "react" 
+import React, { useState, useEffect } from 'react'
+
 import UpdateCard from './UpdateCard'
 
-function EditForm({shoeId}) {
-    
+function EditForm({ shoeId }) {
+
     const [brandName, setBrandName] = useState("")
     const [image, setImage] = useState("")
     const [name, setName] = useState("")
@@ -11,7 +11,7 @@ function EditForm({shoeId}) {
     const [price, setPrice] = useState("")
     const [description, setDescription] = useState("")
     const [silhouette, setSilhouette] = useState("")
- 
+
     const [shoeDataset, setShoeDataset] = useState([])
 
 
@@ -29,45 +29,44 @@ function EditForm({shoeId}) {
     }
     useEffect(() => {
         getShoe(shoeId)
-}, [shoeId])
+    }, [shoeId])
 
+    const updateShoe = async (shoeId, updatedShoe) => {
+        try {
+            const response = await fetch(`http://localhost:8000/api/sneakers/edit/${shoeId}`, {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'SameSite': 'None'
+                },
+                body: JSON.stringify(updatedShoe)
+            });
 
-const updateShoe = async (shoeId, updatedShoe) => {
-    try {
-        const response = await fetch(`http://localhost:8000/api/sneakers-edit/${shoeId}`, { 
-            method: 'PUT',
-            headers: {
-                'Content-Type': 'application/json',
-                'SameSite': 'None'
-            },
-            body: JSON.stringify(updatedShoe)
-        });
+            const data = await response.json();
+            console.log("US Data: ", data)
+            console.log("ShoeID: ", shoeId)
 
-        const data = await response.json();
-        console.log("US Data: " ,data)
-        console.log("ShoeID: ", shoeId)
+        } catch (error) {
+            console.log(error.message);
+        }
 
-    } catch (error) {
-        console.log(error.message);
     }
 
-}
+    const handleSubmit = (event) => {
+        // event.preventDefault();
 
-const handleSubmit = (event) => {
-    // event.preventDefault();
+        const updatedShoe = {
+            brand_name: brandName,
+            grid_picture_url: image,
+            name: name,
+            release_date: releaseDate,
+            retail_price: price,
+            silhouette: silhouette,
+            story_html: description
+        }
+        updateShoe(shoeId, updatedShoe);
 
-    const updatedShoe = {
-        brand_name: brandName,
-        grid_picture_url: image,
-        name: name,
-        release_date: releaseDate,
-        retail_price: price,
-        silhouette: silhouette,
-        story_html: description
     }
-    updateShoe(shoeId, updatedShoe);
-
-}
 
   return (
     <div>
@@ -88,8 +87,8 @@ const handleSubmit = (event) => {
             </form>
             </div>
         </div>
-    </div>
-  )
+        </div>
+    );
 }
 
-export default EditForm
+export default EditForm;

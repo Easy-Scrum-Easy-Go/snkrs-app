@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 function UpdateCard({shoeData}) {
   return (
@@ -14,4 +14,4 @@ function UpdateCard({shoeData}) {
   )
 }
 
-export default UpdateCard
+export default UpdateCard;

@@ -45,7 +45,7 @@ function DescriptionCard({ item }) {
        
       </div>
     </div>
-  )
+  );
 }
 
 export default DescriptionCard;
