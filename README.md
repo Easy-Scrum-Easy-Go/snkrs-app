@@ -1,52 +1,62 @@
-# Inventory App Project - mySQL, Node.JS/Express, React
+# PROJECT NAME
 
-This is the starter code for a basic, front-to-back inventory application, used an alternative to the week 9 inventory application project of the SWE 2.0 curriculum.
+SNKRS APP
 
-The project is expecting to use React on the frontend, with create-react-app already set up in /frontend. It uses mySQL as its query language, uses XAMPP to run the database itself, and uses phpmyadmin to give a GUI to help manage your database.
+## Table of contents
+
+- [Introduction](#introduction)
+- [Technologies](#technologies)
+- [Setup](#setup)
+- [Features](#features)
+- [Contact](#contact)
 
 ---
 
-## To use:
+## Introduction
 
-### Set up Project:
+We are Junior Software Engineers at AMEX! This is a SNKRS APP, a Full Stack Website that pulls from the backend API and displays it to the frontend in React.
 
-- Fork the repository
-- Clone the repo down onto your local machine
-- Change directory into the correct folder
+---
 
-### NPM
+## Technologies
 
-To correctly install all depdendencies for all parts of the project, you'll need to install dependencies in both the root directory _and_ in /frontend.
+- React
+- Node.js
+- JavaScript
+- CSS
+- HTML
 
-- In your terminal, run:
-  `npm install`
-- Then, change directory into the frontend folder:
+---
+
+## Setup
+
+To run this project, install it locally using npm:
 
 ```
-//from root directory
-
-cd frontend
+STEP-BY-STEP:
+$ npm install
+$ cd frontend 
+$ npm install
+$ npm install react-router-dom
+$ npm cd ../ (Back to main folder)
+$ npm run start
 ```
 
-- Inside the frontend folder, run:
-  `npm install` again.
+---
 
-This will make sure that all dependencies are installed for both the entire project as well as the React application used for the frontend.
+## Features
 
-### Setting up the server:
+- Page that displays products
+- Page that displays product
+- Create, read, update, and delete product
+- Search product(s)
 
-Read the README.md file located at backend/README.md for instructions on how to get the server up and running correctly.
+To-do:
 
-### Running the project:
+- Implement shopping cart feature
 
-To run the project, use any of the following scripts that have currently been set up:
+---
 
-- To run the entire project (uses _concurrently_ dependency to do so): `npm start`
-- To run the only the server in Node:
-  `npm run server`
-- To run the server using nodemon:
-  `npm run dev`
-- To run the React App - frontend - only:
-  `npm run client`
-- To empty and then repopulate the database with the data from backend/src/data/userData.json:
-  `npm run data:import`
+## Contact
+
+Coded By: Shirelle, Peter, Coral, & Dante
