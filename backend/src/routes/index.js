@@ -36,7 +36,7 @@ createShoe
 );
 
 // UPDATE A SHOE
-router.put('/sneakers-edit/:id', [
+router.put('/sneakers/edit/:id', [
     check('brand_name').not().isEmpty().trim(),
     check('grid_picture_url').not().isEmpty().trim(),
     check('name').not().isEmpty().trim(),
