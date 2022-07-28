@@ -19,7 +19,7 @@ function App() {
           <Route path='/sneakers' element={<Shoes />} />
           <Route path='/sneakers/:id' element={<Shoe />} />
           <Route path='/sneakers/admin' element={<Admin />} />
-          <Route path="/sneakers-edit/:id" element={<UpdateShoe />} />
+          <Route path="/sneakers/edit/:id" element={<UpdateShoe />} />
           <Route path='/sneakers/search' element={<SneakersSearch />} />
         </Routes>
       </main>
