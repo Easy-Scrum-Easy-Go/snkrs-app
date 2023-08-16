@@ -60,3 +60,15 @@ To-do:
 ## Contact
 
 Coded By: Shirelle, Peter, Coral, & Dante
+
+## DoL Job Functions
+
+JF 3.2 cn explain the principles and uses of relational and non-relational databases
+
+JF 4.3 Is able to build, manage and deploy code into the relavant environment
+
+2.3 Can develop effective user interfaces
+
+JF 1.1 Can explain all stages of the sofare development life cycle
+
+JF 2.6 Can translate wireframes into User interfaces
